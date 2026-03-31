@@ -1,5 +1,6 @@
 {
     "snyk.advanced.autoSelectOrganization": true,
     "js/ts.preferences.importModuleSpecifier": "non-relative",
-    "vitest.commandLine": "npx vitest --config vite.config.ts"
+    "vitest.commandLine": "npx vitest --config vite.config.ts",
+    "snyk.advanced.organization": "6405e39b-7de3-4f71-8d03-3c1c9cd024ca"
 }
