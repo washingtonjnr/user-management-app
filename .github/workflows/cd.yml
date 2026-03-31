@@ -35,10 +35,10 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync dist/user-management-app/ s3://user-management-229015217380-us-east-1-an \
+          aws s3 sync dist/user-management/ s3://user-management-229015217380-us-east-1-an \
             --delete \
             --cache-control "max-age=31536000,public" \
             --exclude "index.html"
 
-          aws s3 cp dist/user-management-app/index.html s3://user-management-229015217380-us-east-1-an/index.html \
+          aws s3 cp dist/user-management/index.html s3://user-management-229015217380-us-east-1-an/index.html \
             --cache-control "no-cache,no-store,must-revalidate"
