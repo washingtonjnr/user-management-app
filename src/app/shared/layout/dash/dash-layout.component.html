@@ -1,0 +1,30 @@
+<div class="layout">
+  <aside class="sidebar" aria-label="Sidebar">
+    <div class="sidebar-brand">
+      <span>User Management</span>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul role="list">
+        <li>
+          <a routerLink="/users/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: false }">
+            Users
+          </a>
+        </li>
+        <li>
+          <a routerLink="/auth/login" routerLinkActive="">
+            Logout
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="content-wrapper">
+    <header class="topbar">
+      <h2 class="page-title">Dashboard</h2>
+    </header>
+    <main class="content">
+      <router-outlet />
+    </main>
+  </div>
+</div>
